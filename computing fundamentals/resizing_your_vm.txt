@@ -1,0 +1,4 @@
+1. A snapshot is a point in time copy of the VM. This can be useful if for some reason something goes terribly wrong with the VM, things can start right up without issue just by reverting to a snapshot.
+2. The VM needs to be turned off to resize the virtual hard disk because while the VM is running it's using the virtual hard disk or reading and writing data to it, so it cannot be used at that time.
+3. Partition can be expanded while the VM is running as the VM is aware of the partition size.
+4. If the guest os supports it the RAM can be resized as it does not involves reading or writing and more RAM can be added as required.

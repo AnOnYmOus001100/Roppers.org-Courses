@@ -1,0 +1,3 @@
+1. https://anonymous001100.github.io/demoHtml/
+
+2. The onclick event generally occurs when the user clicks on an element. It's a fundamental event handler in JavaScript, triggering actions or executing functions in response to user interaction, facilitating dynamic and interactive web functionality. The onclick function is an event handler in JavaScript that is used to respond to a specific event a mouse click on a particular HTML element. This event can be triggered when a user clicks on a button, a link, an image, or virtually any other clickable element on a web page. When the onclick event occurs, the associated JavaScript code is executed, allowing developers to define custom actions or behaviors in response to the user’s interaction.

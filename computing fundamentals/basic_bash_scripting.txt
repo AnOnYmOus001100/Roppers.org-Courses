@@ -1,0 +1,5 @@
+1. #!/bin/bash
+echo `date` >> dates.txt
+
+2. 0 12 * * 5 /home/anon/date.sh
+

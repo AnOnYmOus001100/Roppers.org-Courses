@@ -1,0 +1,4 @@
+1. The Fetch-Decode-Execute Cycle is the cycle that the CPU runs through billions of times per second to make a computer work.
+Fetch: the computer retrieves the instruction from main memory and stores in the registers.
+Decode: the CPU interprets the instruction and figures out what action to take.
+Execute: finally, the CPU performs the action that's required, such as performing calculations.

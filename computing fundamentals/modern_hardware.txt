@@ -1,0 +1,9 @@
+1. Motherboard: A motherboard is a main board or  a Printed Circuit board(PCB) on which all the components of a computer are connected.
+2. PCI Slot: Perpheral Component Interconnect(PCI) is a local computer bus for attaching hardware devices in a computer like a graphics card.
+3. CPU: A Central Processsing Unit(CPU) is the processor whose work is to process. It performs all the operations.
+4. A fan is needed to keep the CPU cool so that the CPU does not overheats and shutdowns. It keeps the temperature down and protects the CPU from overheating which may damage the CPU.
+5. RAM: A Random Access Memory(RAM) also called main memory or primary memory is where the data is kept while the CPU performs the operations.
+6. Hard Drive: It is a secondary storage where Operating System and user data are stored.
+7. Optical Hard Drive: It is a disc drive that uses laser light or electromagnetic waves as a part of the process of reading or writing data to or from optical discs.
+8. Solid State Hard Drive: It is a type of secondary storage where Operating System and user data are stored. The only main difference from a Hard Drive is that this are faster than Hard drives.
+9. Graphics Card: Graphics card is a computer expansion card that generates a feed of graphics output toa display device such as as monitor.

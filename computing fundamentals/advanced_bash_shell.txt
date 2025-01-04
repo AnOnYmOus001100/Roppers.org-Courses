@@ -1,0 +1,11 @@
+The first thing that happens is that the shell is reading STDIN to a buffer. When you press enter, the shell goes and breaks down what is typed into the command it needs to run.
+
+Then the shell starts looking for an 'ls' binary in the environmental PATH. The first 'ls' that the shell finds is the one it will take, so as we discussed earlier, you only want to have one executable with with the specified name in the path. It can determined which 'ls' will be used (ie is first in the path) with the which command.
+
+Then the shell (which is a process with a PID itself) will fork, meaning it will spawn a new child process, and then that child process will "exec" the specified command, in this case, /bin/ls with the appropriate arguments. As a notable point, fork creates a new process, while exec replaces a process. The shell needs to fork first so that the exec occurs in the child process and replaces the child process, rather than replacing the shell itself, which would kill your terminal. This fork/exec process is how all child processes are created.
+
+The parent process will continue running, independent of the child process, and with 'ls' waiting for an incoming connection we can look at our running processes with ps to identify our child and parent processes.
+
+Any output from 'ls' will be sent to STDOUT and STDERR, which will be displayed in the terminal. However, the terminal has the ability to background the child process, so if STDOUT and STDERR aren't being piped anywhere, noone will ever see them.
+
+These two processes are running independently now, and killing the parent does not automatically kill the child. However, it may have been noticed that if we kill the terminal while a process is running in it, it will be prompted if you want to kill the terminal and it's child process.It's because the terminal was programmed to send kill signals to its children when it closes for the UX benefit, not because of any inherent property of parent and child processes.

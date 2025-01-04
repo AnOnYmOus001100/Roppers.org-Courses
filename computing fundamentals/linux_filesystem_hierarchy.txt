@@ -1,0 +1,17 @@
+1. /: This top level directory . This is the root directory under which all the other directory is stored.
+2. /root: This is the root user's home directory and all the data of the root user is stored under it.
+3. /boot: This consists of all the files required for booting the OS. consists of static bootloader, kernel executables and other files for booting the linux OS.
+4. /bin: consists of binaries or programs. 
+/sbin: consists of system binaries or programs.
+5. /etc: consists of all the configuration files.
+6. /home: Each user on th system has a subdirectory here for storage.
+7. /lib: shared library files that are required for system boot are stored here.
+8. /usr: contains executables, libraries, man files, etc.
+9. /var: This directory consists of data files such as log files, email in-boxes, web application related files, cron files, and more
+10. /tmp: The OS and many programs use this directory to store temporary files. This directory is cleared upon system boot and may be deleted at other times without any warning.
+/var/tmp: This directory consists of temporary files. 
+11. /dev: This directory only contains special files, including those relating to the devices. These are virtual files, not physically on the disk.
+12. /mnt: Temporary mouont point for regular filesystems.
+/media: External removable media devices such as USB drives are mounted here.
+13. /proc: Proc file system (procfs) is a virtual file system created on the fly when the system boots and is dissolved at the time of system shutdown. It contains useful information about the processes that are currently running,
+/sys: It allows you to get information about the system and its components (mostly attached and installed hardware) in a structured way.

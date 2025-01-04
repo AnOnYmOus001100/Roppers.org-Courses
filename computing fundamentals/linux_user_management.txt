@@ -1,0 +1,19 @@
+1. * User name
+    * Encrypted password
+        On modern systems, the password will not be stored here.
+   * User ID number (UID)
+   * User's group ID number (GID)
+   * User full name and other data(GECOS)
+        This is an arbitrary set of data also known as the "comment" field. Sometimes name, email, phone number, separated by commas. Most of the time, there is nothing here but just the name.
+   * User home directory
+   * Default Login shell
+
+2. sudo: It is used to run a command as root user.
+passwd: changes the user password.
+-n: Set the minimum number of days between password changes to MIN_DAYS. As it is set to 1 it means the minimum number of days between password changes is 1.
+-x: Set the maximum number of days a password remains valid. After MAX_DAYS, the password is required to be changed. As it is set to 120 it means the password remains valid for 120 days.
+-w: Set the number of days of warning before a password change is required. The WARN_DAYS option is the number of days prior to the password expiring that a user will be warned that their password is about to expire. As it is set to 4 it means that the number of days of warning will be 4 before a password chnage is required.
+-i: This option is used to disable an account after the password has been expired for a number of days. After a user account has had an expired password for INACTIVE days, the user may no longer sign on to the account. As it is set to 10, it means that the account will disable after 10 days after the password has been expired.
+dennis: It is the username for whom the password is being changed.
+
+3. I saw that a new user account has been created, the /etc/passwd file has an entry with the username, x in place of encrypted password, the user's UID, GID, full name, home directory and default login shell. After deleting the account the entry for the user account was deleted including the home directory for the user.
